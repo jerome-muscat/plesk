@@ -1,0 +1,76 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+h1 {
+    color:cyan;
+}
+
+h3 {
+    background-color: black;
+    text-align: center;
+    color:white;
+    text-decoration: underline;
+}
+
+.contenant {
+    display: flex;
+    justify-content: space-around;
+}
+
+.droite {
+    background-color: white;
+    padding: 1%;
+}
+
+.gauche {
+    background-color: #048B9A;
+    padding: 1%;
+    border-radius: 5%;
+    text-align: center;
+}
+
+.texte {
+    list-style: none;
+}
+
+.animation {
+    position: relative;
+    height: 40px;
+    display: block;
+    margin: 0;
+}
+
+.animation > img {
+    position: absolute;
+    left: 40%;
+}
+
+@keyframes fondu-in-out {
+	0%    { opacity:1; }
+	25%   { opacity:1; }
+	75%   { opacity:0; }
+	100%  { opacity:0; }
+}
+
+.animation > img.photo2 {
+    height: 47px;
+    border-radius: 50%;
+	animation-name: fondu-in-out;
+	animation-timing-function: ease;
+	animation-iteration-count: infinite;
+	animation-duration: 3s;
+	animation-direction: alternate;
+}
+
+li > span.description {
+    color: #666666;
+}
+
+li > span.annee {
+    color: #999999;
+}
+
+li > span.missions {
+    color: #434343;
+}
